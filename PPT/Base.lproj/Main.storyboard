@@ -31,8 +31,7 @@
                                     <color key="titleColor" name="AccentColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="JuegoJugador:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KxS-dh-dQJ"/>
-                                    <action selector="JuegoUsuario:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4xd-A8-thf"/>
+                                    <action selector="JuegoJugador:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3XP-qi-mgd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OE7-sw-GDp">
@@ -42,8 +41,17 @@
                                     <color key="titleColor" name="AccentColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="JuegoJugador:" destination="BYZ-38-t0r" eventType="touchUpInside" id="swJ-Ow-AgT"/>
-                                    <action selector="JuegoUsuario:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wyW-sL-BWb"/>
+                                    <action selector="JuegoJugador:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i4l-vA-cQc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rts-YH-n9X">
+                                <rect key="frame" x="296" y="129" width="71" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tijera" image="scissors" catalog="system">
+                                    <color key="titleColor" name="AccentColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="JuegoJugador:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Py5-b3-Bdq"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKK-Sf-9c4">
@@ -61,23 +69,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resultado: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tsf-VK-0Q9">
-                                <rect key="frame" x="178" y="581" width="85" height="21"/>
+                                <rect key="frame" x="129" y="579" width="172" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rts-YH-n9X">
-                                <rect key="frame" x="296" y="129" width="71" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Tijera" image="scissors" catalog="system">
-                                    <color key="titleColor" name="AccentColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="JuegoJugador:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SmR-uW-WPW"/>
-                                    <action selector="JuegoUsuario:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r61-vo-KsE"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
