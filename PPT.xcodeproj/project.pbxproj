@@ -76,6 +76,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8ECBBD1A28B83654001FDFCD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8EF4F03628B6D7FA002EED42 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +120,7 @@
 		8EF4F05828B6D7FD002EED42 /* PPTTests */ = {
 			isa = PBXGroup;
 			children = (
+				8ECBBD1A28B83654001FDFCD /* Model */,
 				8EF4F05928B6D7FD002EED42 /* PPTTests.swift */,
 				8EF4F05B28B6D7FD002EED42 /* Info.plist */,
 			);

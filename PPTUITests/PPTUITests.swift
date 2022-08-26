@@ -22,21 +22,119 @@ class PPTUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testUserGuessPiedra() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
-
+        
+        //let UserGamelabel = app.staticTexts["CampoJuegoUsuario"]
+        //let CompGamelabel = app.staticTexts["CampoJuegoCompu"]
+        
+        //given
+        let piedraBoton = app.buttons["BotonPiedra"]
+        //when
+        piedraBoton.tap()
+        //then
+        let UserGame = app.staticTexts["CampoJuegoUsuario"]
+        XCTAssertNotEqual(UserGame.label, "CampoJuegoUsuario")
+    }
+        
+    func testUserGuessPapel() throws {
+            // UI tests must launch the application that they test.
+        let app = XCUIApplication()
+        app.launch()
+            
+            //let UserGamelabel = app.staticTexts["CampoJuegoUsuario"]
+            //let CompGamelabel = app.staticTexts["CampoJuegoCompu"]
+            
+            //given
+        let papelBoton = app.buttons["BotonPapel"]
+            //when
+            papelBoton.tap()
+            //then
+        let UserGame = app.staticTexts["CampoJuegoUsuario"]
+        XCTAssertNotEqual(UserGame.label, "CampoJuegoUsuario")
+        
+        //UserGamelabel.label
+        //CompGamelabel.label
         // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+                // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
+    func testUserGuessTijera() throws {
+                // UI tests must launch the application that they test.
+        let app = XCUIApplication()
+        app.launch()
+                
+                //let UserGamelabel = app.staticTexts["CampoJuegoUsuario"]
+                //let CompGamelabel = app.staticTexts["CampoJuegoCompu"]
+                
+                //given
+        let tijeraBoton = app.buttons["BotonTijera"]
+                //when
+                tijeraBoton.tap()
+                //then
+        let UserGame = app.staticTexts["CampoJuegoUsuario"]
+        XCTAssertNotEqual(UserGame.label, "CampoJuegoUsuario")
+    }
+    
+    func testJugadaPiedra() throws {
+                // UI tests must launch the application that they test.
+        let app = XCUIApplication()
+        app.launch()
+        //given
+        let piedraBoton = app.buttons["BotonPiedra"]
+        //when
+        piedraBoton.tap()
+        //then
+        let ganador = app.staticTexts.element(matching: .any, identifier: "resultadoo").label
+        var contador = false
+        if (ganador == "¡Ganaste! :)" || ganador == "¡Perdiste! :(" || ganador == "¡Empate! :/"){
+            contador = true
         }
+        XCTAssert(contador)
+        
+        
+    
     }
+    
+    func testJugadaPapel() throws {
+                // UI tests must launch the application that they test.
+        let app = XCUIApplication()
+        app.launch()
+        //given
+        let papelBoton = app.buttons["BotonPapel"]
+        //when
+        papelBoton.tap()
+        //then
+        let ganador = app.staticTexts.element(matching: .any, identifier: "resultadoo").label
+        var contador = false
+        if (ganador == "¡Ganaste! :)" || ganador == "¡Perdiste! :(" || ganador == "¡Empate! :/"){
+            contador = true
+        }
+        XCTAssert(contador)
+        
+        
+    
+    }
+    func testJugadaTijera() throws {
+                // UI tests must launch the application that they test.
+        let app = XCUIApplication()
+        app.launch()
+        //given
+        let tijeraBoton = app.buttons["BotonTijera"]
+        //when
+        tijeraBoton.tap()
+        //then
+        let ganador = app.staticTexts.element(matching: .any, identifier: "resultadoo").label
+        var contador = false
+        if (ganador == "¡Ganaste! :)" || ganador == "¡Perdiste! :(" || ganador == "¡Empate! :/"){
+            contador = true
+        }
+        XCTAssert(contador)
+        
+        
+    
+    }
+    
+
 }
